@@ -98,3 +98,13 @@ ID selectors are declared using the # symbol followed by the ID name.
 This selector will match the HTML element that has an ID attribute with the value primary-content.
 
 IDs are unique to the page, so an element can only have one ID and a page can only have one element with the same ID name.
+
+**Class Selector**: target elements based on their class attribute. The main difference between a class and an ID selector is that IDs are unique and they're used to identify one element on the page, whereas a class can target more than one element.
+
+Class selectors are defined with the . character followed by the class name.
+
+```CSS
+.primary-content {
+  background: grey;
+}
+```
