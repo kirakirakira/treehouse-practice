@@ -147,7 +147,6 @@ ul li {
 
 **Multiple Class ID Selectors**:
 https://css-tricks.com/multiple-class-id-selectors/
-
 ```CSS
 #header.callout {}
 #header .callout {}
@@ -167,6 +166,7 @@ a:link {
   color: orange;
 }
 ```
+Will only apply to a elements with an href attribute.
 
 The :visited pseudo-class targets links that have been visited --or clicked-- by the user:
 ```CSS
@@ -194,5 +194,51 @@ The :focus pseudo-class is only applied to interactive elements like links, butt
 a:focus {
   color: white;
   background-color: orange;
+}
+```
+
+**CSS Comments**: Comments in CSS begin with a forward-slash and an asterisk and end with an asterisk and forward-slash. Everything we write between the opening and closing characters is ignored by the browser.
+
+```CSS
+/* Class Selectors */
+
+.main-header {
+  background: orange; /* Makes the header background orange */
+}
+```
+
+## Common Data Types
+
+**Pixel Units**: size in pixel will always remain the same and will not scale, regardless of the browser window and size of the screen.
+
+**Percentages**: percentage values in CSS are measured relative to a parent element's length.
+
+**Em Units**: most commonly used relative unit. The em is known as a font-relative unit because it's calculated based on a parent element's font size.
+
+Example:
+```CSS
+body {
+  font-size: 1em;
+}
+```
+This is equivalent to setting the font-size value to:
+```CSS
+body {
+  font-size: 16px;
+}
+```
+
+**Converting pixels to ems**: To convert a px value to its equivalent em value: divide an element's px value by the parent element's font-size value.
+
+Example:
+```CSS
+.intro {
+  font-size: 24px;
+}
+```
+To convert the font-size value of intro to an em value, divide 24 by the parent element's font-size. In this case, the parent element is the body element, which has the font-size set to 1em, or 16px. 24/16 = 1.5 This gives us an em-based font-size value of:
+```CSS
+.intro {
+  font-size: 1.5em;  /* 24px/16px */
 }
 ```
