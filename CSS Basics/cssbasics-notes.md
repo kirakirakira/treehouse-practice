@@ -108,3 +108,91 @@ Class selectors are defined with the . character followed by the class name.
   background: grey;
 }
 ```
+
+**Example of reusing classes**: It's best to create classes for the repeated styles.
+
+Space-separate each class name in the class attribute:
+```HTML
+<div class="primary-content t-border rounded">
+```
+
+Then target each class in the style sheet:
+```CSS
+.primary-content {
+  background: grey;
+}
+.t-border {
+  border-top: 1px solid;
+}
+.rounded {
+  border-radius: 10px;
+}
+```
+
+If an element has both an id and a class, the id CSS will override the class CSS.
+
+**Descendant Selectors**: Can combine selectors to create descendant selectors that target elements that are descendants of an element. This makes selectors more specific.
+
+**Examples of descendant selectors**: To create a descendant selector, use two or more selectors separated by whitespace:
+
+```CSS
+.main-header span {
+  font-size: 26px;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+```
+
+**Multiple Class ID Selectors**:
+https://css-tricks.com/multiple-class-id-selectors/
+
+```CSS
+#header.callout {}
+#header .callout {}
+```
+
+The ```#header .callout``` selects all elements with the class name callout that are descendants of the element with an ID of header.
+
+The ```#header.callout``` selects the element which has an ID of header and also a class name of callout.
+
+**Pseudo-classes**: Pseudo-classes are similar to classes, but they're not explicitly defined in an element's class attribute. Unlike type, ID and class selectors, pseudo-classes can target elements dynamically based on user interaction, an element's state, and more.
+
+Think of a pseudo-class as a keyword we add to a selector to style a special state of an element.
+
+The :link pseudo-class targets links that have not been visited by the user:
+```CSS
+a:link {
+  color: orange;
+}
+```
+
+The :visited pseudo-class targets links that have been visited --or clicked-- by the user:
+```CSS
+a:visited {
+  color: lightblue;
+}
+```
+
+The :hover pseudo-class targets an element when a user hovers over it:
+```CSS
+a:hover {
+  color: forestgreen;
+}
+```
+
+The :active pseudo-class gets applied when an element is in an active state:
+```CSS
+a:active {
+  color: lightcoral;
+}
+```
+
+The :focus pseudo-class is only applied to interactive elements like links, buttons and form elements. The styles are applied as soon as an element receives focus:
+```CSS
+a:focus {
+  color: white;
+  background-color: orange;
+}
+```

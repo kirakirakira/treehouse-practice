@@ -3,8 +3,19 @@ body {
   margin: 0;
 }
 
-header {
+.main-header {
   background-color: orange;
+}
+
+.title {
+  color: white;
+  font-size: 26px;
+}
+
+ol li {
+  background-color: tomato;
+  color: white;
+  margin-bottom: 5px;
 }
 
 h1 {
@@ -21,8 +32,16 @@ h3 {
   color: #48525c;
 }
 
-#primary-content {
-  border: 3px solid red;
+.primary-content {
+  text-align: center;
+}
+
+.secondary-content {
+
+}
+
+.t-border {
+  border-top: 2px solid lightgrey;
 }
 
 #main-footer {
