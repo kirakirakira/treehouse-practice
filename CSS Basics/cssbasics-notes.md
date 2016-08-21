@@ -228,6 +228,8 @@ body {
 }
 ```
 
+Default font size for most browsers is 16px, which would equal 1em.
+
 **Converting pixels to ems**: To convert a px value to its equivalent em value: divide an element's px value by the parent element's font-size value.
 
 Example:
@@ -240,5 +242,44 @@ To convert the font-size value of intro to an em value, divide 24 by the parent 
 ```CSS
 .intro {
   font-size: 1.5em;  /* 24px/16px */
+}
+```
+
+Watch out for this:
+If the parent element's font-size is 2em, and a descendant element is 1.5em, then the descendant element is actually 2*1.5em = 3em.
+
+**Rem Units**: Rem stands for "root em". The rem unit is similar to the em unit. The difference is that rem is relative only to the root element of the page (the root element is the html element.)
+
+Example:
+```CSS
+h1 {
+  font-size: 5.625rem;
+}
+```
+
+Technique for sizing with px, rem, and em: https://css-tricks.com/rems-ems/
+px at the Root (document level), rem for Components (modules on the page), em for Text Elements (will be relative to the module)
+
+**Color Values**: colors can be described with a keyword, a hexadecimal value, or an RGB function.
+
+Examples:
+Hexadecimal Values
+```CSS
+.main-header {
+  background-color: #ff0033;
+}
+```
+
+RGB Values
+```CSS
+a:link {
+  color: rgb(255, 169, 73);
+}
+```
+
+RGBa Values
+```CSS
+a:hover {
+  color: rgba(255, 169, 73, .4);
 }
 ```
