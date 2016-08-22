@@ -277,7 +277,7 @@ a:link {
 }
 ```
 
-RGBa Values
+RGBa Values: a is alpha - the opacity of the color
 ```CSS
 a:hover {
   color: rgba(255, 169, 73, .4);
