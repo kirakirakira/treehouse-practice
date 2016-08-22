@@ -283,3 +283,10 @@ a:hover {
   color: rgba(255, 169, 73, .4);
 }
 ```
+
+**Text Styles**:
+
+```text-align```: controls the horizontal alignment of text
+```text-transform```: changes the case of text - uppercase, lowercase, or capitalized
+```text-decoration```: sets the line decoration of elements; commonly used to remove underlines in links
+```font-weight```: sets how thick or thin the characters are displayed
