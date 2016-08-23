@@ -290,3 +290,27 @@ a:hover {
 ```text-transform```: changes the case of text - uppercase, lowercase, or capitalized
 ```text-decoration```: sets the line decoration of elements; commonly used to remove underlines in links
 ```font-weight```: sets how thick or thin the characters are displayed
+
+**Font Properties**:
+
+CSS font stacks are prioritized lists of fonts that the browser will cycle through until it finds a font that is installed on the user's system.
+
+```font-family```: defines a typeface for our text
+```font-style```: allows italic or oblique faces to be selected within a font family
+
+**Line-height Example**: Line-height property in the body element sets the overall line-height of the page.
+```CSS
+body {
+  line-height: 1.5;
+}
+```
+The browser multiplies the font size of each element by 1.5 to determine their line height.
+
+**Font**: a shorthand property that lets us write all the font properties in one value.
+```CSS
+body {
+  font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+```
+
+**The Box Model**: describes the amount of space each element takes up on the page.
