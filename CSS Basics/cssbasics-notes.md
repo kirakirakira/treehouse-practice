@@ -314,3 +314,10 @@ body {
 ```
 
 **The Box Model**: describes the amount of space each element takes up on the page.
+
+**Padding**: separates content from the surrounding border area; length or percentage unit
+
+**Borders**: border-width, border-style, border-color, border
+
+**Display**: none, inline, block, inline-block
+
